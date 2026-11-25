@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     %% ===== Héritage =====
     Entity <|-- Enemy
@@ -115,4 +116,5 @@ classDiagram
         +VueGameOver()
         +VueChargerSauvegarde()
         +VueQuitter()
-    }   
+    }
+```
