@@ -36,8 +36,6 @@ def demander_choix_valide():
                 # return choix
             return choix
 
-
-    
 # verif choix 
 def verif_choix(choix,min, max):
     while True:    
@@ -134,7 +132,7 @@ def choisir_ennemie():
     ennemie = list(db["monstres"].find({}, {"_id": 0}))
     # choisir le monstre associé 
     return random.choice(ennemie)
-
+ 
 # lancer combat
 def lancer_combat():
     # wave = 1 
@@ -159,30 +157,39 @@ def lancer_combat():
 # jouer combat 
 def jouer_combat():
     # ennemie attaque 
-    ennemie_attack
+    ennemie_attack()
     # perso attaque
-    personnage_attack 
+    personnage_attack()
     # vérifier perso et ennemie en vie 
-    
 
 # Equipe mort 
-def equipe_mort():
+def equipe_mort(nom, score):
     # Afficher nom 
+    print(nom)
     # afficher score 
+    print(score)
     # attendre input 
+    if input("AAAA"): 
         # afficher menu 
+        afficher_menu()
 
 # équipe en vie
-def equipe_alive():
+def equipe_alive(equipe):
     # pour i [equipe]
+    for i in [equipe]: 
     # si pv > 0
+        if 
         # true
+            True
     # sinin 
+        else:
         # return false 
+            return False 
 
 # ennemie attack
 def ennemie_attack():
     # HP = "health" (PA)
+    hp = 
     # récupérer "attack" [ennemie] "health","Defense" (PA)
     # attack - defense - health 
     # "health" (PA) = HP
@@ -192,4 +199,4 @@ def personnage_attack():
     # HPE = "health" [ennemie]
     # récupérer "attack" [equipe]
     # "attack" 1 + 2 + 3 - "defense" - "Health" [ennemie]
-    # "health" [ennemie] = HPA 
+    # "health" [ennemie] = HPA
